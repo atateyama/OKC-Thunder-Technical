@@ -1,6 +1,6 @@
-# Tateyama-OKC-Analyst-Technical-Assessment
-**Aric Tateyama's Technical Assessment for the OKC Thunder Analyst Internship position.**
+# Aric Tateyama's Technical Assessment for the OKC Thunder Analyst Internship position
 
+**Packages Incorporated**
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 library(readr)
