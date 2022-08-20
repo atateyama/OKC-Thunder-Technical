@@ -25,6 +25,10 @@ shots_data$zone <- with(shots_data, ifelse(x > 22.0 & y <= 7.8 | x < -22.0 & y <
 teamA <- filter(shots_data, team == "Team A")
 teamB <- filter(shots_data, team == "Team B")
 
+```
+# Shot Distribution Percentage for Each Team 
+
+```{r Shot Percentage}
 # Percentage of Shots Attempted Within a Zone For Team A
 PSA_A <- prop.table(table(teamA$zone))
 paste("Team A's Shot Distribution Percentage for 2-Pointers is: ", round(PSA_A[1] * 100, 3), "%")
@@ -37,6 +41,10 @@ paste("Team B's Shot Distribution Percentage for 2-Pointers is: ", round(PSA_B[1
 paste("Team B's Shot Distribution Percentage for Corner 3's is: ", round(PSA_B[2] * 100, 3), "%")
 paste("Team B's Shot Distribution Percentage for Non-Corner 3's is: ", round(PSA_B[3] * 100, 3), "%")
 
+```
+# Effective Field Goal Percentage for Each Team
+
+```{r eFG}
 # Function For Effective Field Goal Percentage
 eFG <- function(FGM, M3PT, FGA)  {
   eFGP <- ((FGM) + (0.5 * M3PT)) / (FGA)
