@@ -1,6 +1,7 @@
 # Aric Tateyama's Technical Assessment for the OKC Thunder Analyst Internship position
 
 **Packages Incorporated**
+
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 library(readr)
@@ -24,7 +25,6 @@ shots_data$zone <- with(shots_data, ifelse(x > 22.0 & y <= 7.8 | x < -22.0 & y <
 # Filter Team A and Team B
 teamA <- filter(shots_data, team == "Team A")
 teamB <- filter(shots_data, team == "Team B")
-
 ```
 ### Shot Distribution Percentage for Each Team 
 
@@ -40,7 +40,6 @@ PSA_B <- prop.table(table(teamB$zone))
 paste("Team B's Shot Distribution Percentage for 2-Pointers is: ", round(PSA_B[1] * 100, 3), "%")
 paste("Team B's Shot Distribution Percentage for Corner 3's is: ", round(PSA_B[2] * 100, 3), "%")
 paste("Team B's Shot Distribution Percentage for Non-Corner 3's is: ", round(PSA_B[3] * 100, 3), "%")
-
 ```
 ### Effective Field Goal Percentage for Each Team
 
