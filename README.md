@@ -1,5 +1,5 @@
 # Tateyama-OKC-Analyst-Technical-Assessment
-Aric Tateyama's Technical Assessment for the OKC Thunder Analyst Internship position. 
+**Aric Tateyama's Technical Assessment for the OKC Thunder Analyst Internship position.**
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
@@ -26,7 +26,7 @@ teamA <- filter(shots_data, team == "Team A")
 teamB <- filter(shots_data, team == "Team B")
 
 ```
-# Shot Distribution Percentage for Each Team 
+### Shot Distribution Percentage for Each Team 
 
 ```{r Shot Percentage}
 # Percentage of Shots Attempted Within a Zone For Team A
@@ -42,7 +42,7 @@ paste("Team B's Shot Distribution Percentage for Corner 3's is: ", round(PSA_B[2
 paste("Team B's Shot Distribution Percentage for Non-Corner 3's is: ", round(PSA_B[3] * 100, 3), "%")
 
 ```
-# Effective Field Goal Percentage for Each Team
+### Effective Field Goal Percentage for Each Team
 
 ```{r eFG}
 # Function For Effective Field Goal Percentage
