@@ -7,7 +7,7 @@ library(readr)
 library(dplyr)
 ```
 
-# Data Science & Solutions Technical Assessment
+### Import and Filter Data by Team and Zones
 
 ```{r shots_data}
 # Import shots_data.csv
